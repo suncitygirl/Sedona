@@ -26,30 +26,30 @@
     </header>
     <section class = "user-menu">
       <form action = "#" method = "post">
-        <div class = "infrasturcure"?>
-          <b>Инфракструктура</b><br>
-          <input type = "checkbox" name = "waterpool">Бассейн<br>
+        <fieldset class = "infrasturcure">
+          <legend>Инфракструктура</legend>
+          <input type = "checkbox" name = "waterpool" id = "waterpool">Бассейн<br>
           <input type = "checkbox" name = "parking">Парковка<br>
           <input type = "checkbox" name = "wi-fi">Wi-Fi<br>
         </div>
-        <div class = "housing">
-          <b>Тип жилья</b><br>
+        <fieldset class = "housing">
+          <legend>Тип жилья</legend>
           <input type = "checkbox" name = "inn">Гостиница<br>
           <input type = "checkbox" name = "motel">Мотель<br>
           <input type = "checkbox" name = "apartments">Апартаменты<br>
-        </div>
-        <div class = "fee">
+        </fieldset>
+        <fieldset class = "fee">
           <div class = "fee-range">
             <span class = "from">От <input type = "number" name = "from" value = "0"></span>
             <span class = "to">До<input type = "number" name = "to" value = "30000"></span>
           </div>
           <input type = "submit" value = "Показать">
-        </div>
+        </fieldset>
       </form>
     </section>
     <section class = "catalog">
       <div class = "found">
-        <b class = "found">Найдено</b>
+        <b class = "found">Найдено: 3</b>
       </div>
       <div class = "sort">
       </div>
