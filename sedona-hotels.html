@@ -4,39 +4,43 @@
     <meta charset="utf-8">
     <title>Поиск гостиниц</title>
   </head>
+
 <body>
   <div class = "container">
+
     <header class = "main-header">
-        <nav class = "main-navigator"
+        <nav class = "main-navigator">
         <ul>
           <li>
-            <a href = "#">Информация</a>
+            <a href = "#" class = "info">Информация</a>
           </li>
           <li>
-            <a href = "#">Фото и видео</a>
+            <a href = "#" class = "gallery">Фото и видео</a>
           </li>
           <li>
-            <a href = "#">Карта штата</a>
+            <a href = "#" class = "map">Карта штата</a>
           </li>
           <li>
-            <a href = "#" class = "active">Гостиницы</a>
+            <a href = "sedona-hotels.html" class = "hotels active">Гостиницы</a>
           </li>
         </ul>
         </nav>
     </header>
+
     <section class = "user-menu">
       <form action = "#" method = "post">
         <fieldset class = "infrasturcure">
-          <legend class = "first-checkbox-name">Инфракструктура</legend>
+          <legend class = "first title">Инфракструктура</legend>
           <input type = "checkbox" name = "waterpool" value = "val-1" id = "wp" checked>
           <label for = "wp">Бассейн</label><br>
           <input type = "checkbox" name = "parking" value = "val-2" id = "pk">
           <label for = "pk">Парковка</label><br>
           <input type = "checkbox" name = "wi-fi" value = "val-3" id = "wf">
           <label for = "wf">Wi-Fi</label>
-        </div>
+        </fieldset>
+
         <fieldset class = "housing">
-          <legend class = "second checkbox-name">Тип жилья</legend>
+          <legend class = "second title">Тип жилья</legend>
           <input type = "checkbox" name = "inn" value = "val-1" id = "inn" checked>
           <label for = "inn">Гостиница</label><br>
           <input type = "checkbox" name = "motel" value = "val-2" id = "mt" checked>
@@ -44,45 +48,146 @@
           <input type = "checkbox" name = "apartments" value = "val-3" id = "apt" checked>
           <label for = "apt">Апартмаменты</label>
         </fieldset>
-        <fieldset class = "fee">
-          <div class = "fee-range">
-            <span class = "from">
+
+        <fieldset class = "price">
+            <legend class = "third title">Стоимость в сутки</legend>
+            <label>
               От <input type = "number" name = "from" value = "0">
-            </span>
-            <span class = "to">До<input type = "number" name = "to" value = "30000"></span>
-          </div>
+            </label>
+            <label>
+              До<input type = "number" name = "to" value = "30000">
+            </label>
           <button type = "submit">Показать</button>
         </fieldset>
       </form>
     </section>
-    <section class = "catalog">
-      <div class = "found">
-        <b class = "found">Найдено: 3</b>
+
+    <div class = "catalog">
+      <header class = "catalog-header">
+        <h2 class = "found">Найдено: 3</h2>
+      <div class = "sort-type-list">
+        <ul>
+          <li>
+            <a class = "sort-by-price" href = "#">По цене</a>
+            <a class = "sort-by-type>" href = "#">По типу</a>
+            <a class = "sort-by-rating" href = "#">По рейтингу</a>
+        </ul>
+        <div class = "arrows">
+          <a class = "arrow-up" href = "#"></a>
+          <a class = "arrow-down" href = "#"></a>
+        </div>
       </div>
-      <div class = "sort">
-      </div>
-      <div class = "search-results">
-      </div>
-    <section class = "main-content">
-    </section>
+
+      </header>
+
+      <main class = "content">
+
+        <section class = "catalog-element">
+          <a class = "hotel-pic catalog-column-left" href = "#">
+            <img src = "img/amara-resort-and-spa.png" width="135" height="90" alt = "Amara Resor and Spa">
+          </a>
+
+          <div class = "catalog-column-mid">
+            <h2 class = "hotel-name"><a href = "#">Amara Resort &amp; Spa</a></h2>
+
+            <div class = "hotel-info-left">
+              Гостиница
+              <a class = "btn get-info">Подробнее</a>
+            </div>
+
+            <div class = "hotel-info-right">
+              от 3500 Р.
+              <a class = "btn place-order">Забронировать</a>
+            </div>
+          </div>
+
+          <div class = "catalog-column-right">
+            <div class="stars" data-rating="4"></div>
+            <div class="rating">Рейтинг:
+              <span>8,5</span>
+              <span class="hidden">10</span>
+            </div>
+          </div>
+        </section>
+
+        <section class = "catalog-element">
+          <a class = "hotel-pic catalog-column-left" href = "#">
+            <img src = "img/desert-quail-inn.png" width="135" height="90" alt = "Desert Quail">
+          </a>
+
+          <div class = "catalog-column-mid">
+            <h2 class = "hotel-name catalog-column-mid"><a href = "#">Desert Quail Inn</a></h2>
+
+            <div class = "hotel-info-left">
+              Мотель
+              <a class = "btn get-info">Подробнее</a>
+            </div>
+
+            <div class = "hotel-info-right">
+              от 2000 Р.
+              <a class = "btn place-order">Забронировать</a>
+            </div>
+          </div>
+
+          <div class = "catalog-column-right">
+            <div class="stars" data-rating="2"></div>
+            <div class="rating">Рейтинг:
+              <span>8,9</span>
+              <span class="hidden">10</span>
+            </div>
+          </div>
+        </section>
+
+        <section class = "catalog element">
+          <a class = "hotel-pic catalog-column-left" href = "#">
+            <img src = "img/villas-at-poco-diablo.png" width="135" height="90" alt = "Villas at Poco Diablo">
+          </a>
+
+          <div class = "catalog-column-mid">
+            <h2 class = "hotel-name catalog-column-mid"><a href = "#">Villas at Poco Diablo</a></h2>
+
+            <div class = "hotel-info-left">
+              Апартаменты
+              <a class = "btn get-info">Подробнее</a>
+            </div>
+
+            <div class = "hotel-info-right">
+              от 4500 Р.
+              <a class = "btn place-order">Забронировать</a>
+            </div>
+
+            <div class = "catalog-column-right">
+              <div class="stars" data-rating="3"></div>
+              <div class="rating">Рейтинг:
+                <span>9,2</span>
+                <span class="hidden">10</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
     <footer class = "main-footer">
       <section class = "hashtag">
         <p>#visitsedona<p>
       </section>
       <section class = "social">
-        <a href = "#" class "twitter-button"></a>
+        <a href = "#" class = "twitter-button"></a>
         <a href = "#" class = "facebook-button"></a>
         <a href = "#" class = "youtube-button"></a>
       </section>
       <section class = "copyright">
         <p>
           Website by
-          <a href = "#" class "author"></a>
+          <a href = "#" class = "author"></a>
           for
           <a href = "http://htmlacademy.ru/" class = "htmlacademy"></a>
         </p>
       </section>
     </footer>
+
   </div>
+  
 </body>
 </html>
