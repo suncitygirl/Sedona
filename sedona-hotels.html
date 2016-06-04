@@ -27,23 +27,31 @@
     <section class = "user-menu">
       <form action = "#" method = "post">
         <fieldset class = "infrasturcure">
-          <legend>Инфракструктура</legend>
-          <input type = "checkbox" name = "waterpool" id = "waterpool">Бассейн<br>
-          <input type = "checkbox" name = "parking">Парковка<br>
-          <input type = "checkbox" name = "wi-fi">Wi-Fi<br>
+          <legend class = "first-checkbox-name">Инфракструктура</legend>
+          <input type = "checkbox" name = "waterpool" value = "val-1" id = "wp" checked>
+          <label for = "wp">Бассейн</label><br>
+          <input type = "checkbox" name = "parking" value = "val-2" id = "pk">
+          <label for = "pk">Парковка</label><br>
+          <input type = "checkbox" name = "wi-fi" value = "val-3" id = "wf">
+          <label for = "wf">Wi-Fi</label>
         </div>
         <fieldset class = "housing">
-          <legend>Тип жилья</legend>
-          <input type = "checkbox" name = "inn">Гостиница<br>
-          <input type = "checkbox" name = "motel">Мотель<br>
-          <input type = "checkbox" name = "apartments">Апартаменты<br>
+          <legend class = "second checkbox-name">Тип жилья</legend>
+          <input type = "checkbox" name = "inn" value = "val-1" id = "inn" checked>
+          <label for = "inn">Гостиница</label><br>
+          <input type = "checkbox" name = "motel" value = "val-2" id = "mt" checked>
+          <label for = "mt">Мотель</label><br>
+          <input type = "checkbox" name = "apartments" value = "val-3" id = "apt" checked>
+          <label for = "apt">Апартмаменты</label>
         </fieldset>
         <fieldset class = "fee">
           <div class = "fee-range">
-            <span class = "from">От <input type = "number" name = "from" value = "0"></span>
+            <span class = "from">
+              От <input type = "number" name = "from" value = "0">
+            </span>
             <span class = "to">До<input type = "number" name = "to" value = "30000"></span>
           </div>
-          <input type = "submit" value = "Показать">
+          <button type = "submit">Показать</button>
         </fieldset>
       </form>
     </section>
