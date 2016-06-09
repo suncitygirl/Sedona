@@ -1,0 +1,140 @@
+html,
+body {
+  max-width: 1200px;
+  min-height: 2762px;
+  margin: 0 auto;
+}
+
+body {
+  /*background: #000000 url("sed.jpg") no-repeat 50% 1px;
+  background-size: 1200px auto;*/
+  background-color: RGBA(100, 255, 255, 0.3);
+}
+
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 76px;
+}
+
+.main-navigation {
+  min-height: 56px;
+  margin: 0 6%;
+}
+
+.intro-image {
+  height: 352px;
+  width: 458px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 135px;
+}
+
+.feature-title {
+  min-height: 100px;
+  width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
+
+.first-feature {
+  width: 100%;
+}
+
+.right-side-bar {
+  display: inline-block;
+  height: 256px;
+  width: 33%;
+  white-space: pre-wrap;
+}
+
+.sedona-view-pic {
+  display: inline-block;
+  width: 66%;
+  height: 256px;
+}
+
+.promo-item {
+  float: left;
+  height: 330px;
+  width: 33%;
+}
+
+.left-side-bar {
+  display: inline-block;
+  height: 256px;
+  width: 33%;
+}
+
+.delils-bridge-pic {
+  display: inline-block;
+  width: 66%;
+  height: 256px;
+}
+
+.second-feature {
+  width: 100%;
+}
+
+.features {
+  marigin-bottom: 50px;
+}
+
+.feature {
+  float: left;
+  height: 256px;
+  width: 33%;
+}
+
+.index-content-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 568px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.hotel-search {
+  height: 481px;
+  width: 568px;
+  margin-top: 205px;
+  border: dashed 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iframe {
+  height: 473px;
+  width: 100%;
+}
+
+.main-footer {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 120px;
+  width: 100%;
+}
+
+.hashtag {
+  display: inline-block;
+  width: 33%;
+}
+
+.social {
+  display: inline-block;
+  width: 33%
+}
+
+.copyright {
+  display: inline-block;
+  width: 33%
+}
