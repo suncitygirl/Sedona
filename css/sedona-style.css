@@ -15,7 +15,7 @@ body {
 body {
   /*background: #000000 url("sed.jpg") no-repeat 50% 1px;
   background-size: 1200px auto;*/
-  background: #ffffff url("../img/background-photo.png") no-repeat 0px 56px;
+  background: #ffffff url("../img/background-photo.png") no-repeat 50% 56px;
   background-size: 100% 515px;
 }
 
@@ -126,20 +126,61 @@ li .logo {
 
 .first-feature {
   width: 100%;
+  font-size: 0;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .right-side-bar {
   display: inline-block;
+  vertical-align: top;
   height: 256px;
   width: 33%;
   white-space: pre-wrap;
+  text-align: center;
+  font-size: 0px;
+  padding: 44px 0;
+  box-sizing: border-box;
+}
+
+.right-side-bar .feature-name {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.right-side-bar .number {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 21px;
+  width: 51px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.right-side-bar p {
+  margin-left: auto;
+  margin-right: auto
+  text-transform: uppercase;
+  padding: 0 15%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 43px;
 }
 
 .sedona-view-pic {
   display: inline-block;
+  vertical-align: top;
   width: 66%;
   height: 256px;
 }
+
+
 
 .promo-item {
   float: left;
