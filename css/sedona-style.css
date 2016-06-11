@@ -152,6 +152,7 @@ li .logo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
+  margin-top: 0;
 }
 
 .right-side-bar .number {
@@ -162,6 +163,7 @@ li .logo {
   width: 51px;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 26px;
 }
 
 .right-side-bar p {
@@ -171,8 +173,9 @@ li .logo {
   padding: 0 15%;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 43px;
-}
+  margin-bottom: 50px;
+  margin-top: 0;
+  }
 
 .sedona-view-pic {
   display: inline-block;
@@ -185,7 +188,6 @@ li .logo {
   font-size: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  white-space: nowrap;;
 }
 
 .promo-item {
@@ -200,6 +202,7 @@ li .logo {
   font-weight: 400;
   line-height: 26px;
   padding-top: 60px;
+  box-sizing: border-box;
 }
 
 .housing-promo-logo {
@@ -226,14 +229,15 @@ li .logo {
 .promo-item .logo {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
 
-.promo-item h2{
-  /*position: relative;*/
+.promo-item h2 {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .promo-item p {
@@ -242,27 +246,65 @@ li .logo {
   margin-right: auto
 }
 
-/*.promo-item h2::after {
-  content: "";
-  display: block;
-
-}*/
+.second-feature {
+  width: 100%;
+  font-size: 0;
+}
 
 .left-side-bar {
   display: inline-block;
+  vertical-align: top;
+  background-color: #81b3d2;
+  color: #ffffff;
   height: 256px;
   width: 33%;
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 0px;
+  padding: 44px 0;
+  box-sizing: border-box;
 }
 
-.delils-bridge-pic {
+.left-side-bar .feature-name {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.left-side-bar .number {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 21px;
+  width: 51px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+
+.left-side-bar p {
+  margin-left: auto;
+  margin-right: auto
+  text-transform: uppercase;
+  padding: 0 15%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 43px;
+  margin-top: 0;
+}
+
+.devils-bridge-pic {
   display: inline-block;
+  vertical-align: top;
   width: 66%;
   height: 256px;
 }
 
-.second-feature {
-  width: 100%;
-}
 
 .features {
   marigin-bottom: 50px;
@@ -278,7 +320,6 @@ li .logo {
   margin-left: auto;
   margin-right: auto;
   width: 568px;
-
 }
 
 .hidden {
