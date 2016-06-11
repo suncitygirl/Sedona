@@ -114,6 +114,7 @@ li .logo {
 }
 
 .feature-title p {
+  color: #333;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -127,13 +128,13 @@ li .logo {
 .first-feature {
   width: 100%;
   font-size: 0;
-  background-color: #81b3d2;
-  color: #ffffff;
 }
 
 .right-side-bar {
   display: inline-block;
   vertical-align: top;
+  background-color: #81b3d2;
+  color: #ffffff;
   height: 256px;
   width: 33%;
   white-space: pre-wrap;
@@ -180,13 +181,72 @@ li .logo {
   height: 256px;
 }
 
-
+.promo-recomendations {
+  font-size: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;;
+}
 
 .promo-item {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
   height: 330px;
   width: 33%;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 60px;
 }
+
+.housing-promo-logo {
+  width: 75px;
+  height: 72px;
+  background: #ffffff url("../img/sprites.png") no-repeat center;
+  background-position: -154px -53px ;
+}
+
+.food-promo-logo {
+  width: 74px;
+  height: 70px;
+  background: #ffffff url("../img/sprites.png") no-repeat center;
+  background-position: -2px -54px ;
+}
+
+.present-promo-logo {
+  width: 64px;
+  height: 76px;
+  background: #ffffff url("../img/sprites.png") no-repeat center;
+  background-position: -86px -51px;
+}
+
+.promo-item .logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-item h2{
+  /*position: relative;*/
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.promo-item p {
+  padding: 0 15%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/*.promo-item h2::after {
+  content: "";
+  display: block;
+
+}*/
 
 .left-side-bar {
   display: inline-block;
