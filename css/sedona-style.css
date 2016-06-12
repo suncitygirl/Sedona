@@ -130,7 +130,7 @@ li .logo {
   font-size: 0;
 }
 
-.right-side-bar {
+.side-bar {
   display: inline-block;
   vertical-align: top;
   background-color: #81b3d2;
@@ -144,7 +144,7 @@ li .logo {
   box-sizing: border-box;
 }
 
-.right-side-bar .feature-name {
+.feature-name {
   display: block;
   font-size: 21px;
   font-weight: 700;
@@ -155,7 +155,7 @@ li .logo {
   margin-top: 0;
 }
 
-.right-side-bar .number {
+.number {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -166,18 +166,19 @@ li .logo {
   margin-bottom: 26px;
 }
 
-.right-side-bar p {
+.number + p {
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
   text-transform: uppercase;
   padding: 0 15%;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 50px;
   margin-top: 0;
+  max-width: 252px;
   }
 
-.sedona-view-pic {
+.feature-img {
   display: inline-block;
   vertical-align: top;
   width: 66%;
@@ -251,70 +252,22 @@ li .logo {
   font-size: 0;
 }
 
-.left-side-bar {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #81b3d2;
-  color: #ffffff;
-  height: 256px;
-  width: 33%;
-  white-space: pre-wrap;
-  text-align: center;
-  font-size: 0px;
-  padding: 44px 0;
-  box-sizing: border-box;
-}
-
-.left-side-bar .feature-name {
-  display: block;
-  font-size: 21px;
-  font-weight: 700;
-  max-width: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-  margin-top: 0;
-}
-
-.left-side-bar .number {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 21px;
-  width: 51px;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 26px;
-}
-
-.left-side-bar p {
-  margin-left: auto;
-  margin-right: auto
-  text-transform: uppercase;
-  padding: 0 15%;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 43px;
-  margin-top: 0;
-}
-
-.devils-bridge-pic {
-  display: inline-block;
-  vertical-align: top;
-  width: 66%;
-  height: 256px;
-}
-
-
 .features {
-  marigin-bottom: 50px;
+  font-size: 0;
+  margin-bottom: 50px;
 }
 
 .feature {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   height: 256px;
   width: 33%;
+  background-color: #eee;
+  text-align: center;
+  padding-top: 45px;
+  box-sizing: border-box;
 }
+
 
 .index-content-bottom {
   margin-left: auto;
