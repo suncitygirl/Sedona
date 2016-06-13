@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "PT Sans Narrow", "Aria", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   font-size: 21px;
   font-weight: 700;
@@ -13,9 +13,7 @@ body {
 }
 
 body {
-  /*background: #000000 url("sed.jpg") no-repeat 50% 1px;
-  background-size: 1200px auto;*/
-  background: #ffffff url("../img/background-photo.png") no-repeat 50% 56px;
+  background: #ffffff url("../img/background-photo.png") no-repeat 50% 56px ;
   background-size: 100% 515px;
 }
 
@@ -53,7 +51,7 @@ body {
 }
 
 .main-navigation li:nth-child(3) {
-    position: relative;
+  position: relative;
 }
 
 .main-navigation a {
@@ -176,7 +174,7 @@ li .logo {
   margin-bottom: 50px;
   margin-top: 0;
   max-width: 252px;
-  }
+}
 
 .feature-img {
   display: inline-block;
@@ -254,7 +252,7 @@ li .logo {
 
 .features {
   font-size: 0;
-  margin-bottom: 50px;
+  margin-bottom: 57px;
 }
 
 .feature {
@@ -270,22 +268,66 @@ li .logo {
 
 
 .index-content-bottom {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 568px;
 }
 
-.hidden {
-  display: none;
+.interest-block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 434px;
+  min-height: 96px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.interest-block h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.interest-block p {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
 
 .hotel-search {
+  width: 568px;
+  height: 481px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 33px 164px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*.hidden {
+  display: none;
+}*/
+
+.search-form {
+  position: absolute;
   height: 481px;
   width: 568px;
-  margin-top: 205px;
-  border: dashed 1px;
-  margin-left: auto;
-  margin-right: auto;
+  border: none;
 }
 
 .iframe {
@@ -294,6 +336,7 @@ li .logo {
 }
 
 .main-footer {
+  font-size: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
@@ -304,14 +347,49 @@ li .logo {
 .hashtag {
   display: inline-block;
   width: 33%;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .social {
   display: inline-block;
-  width: 33%
+  width: 33%;
+  font-size: 0;
+}
+
+.twitter-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -49px 0;
+  margin-left: 6px;
+}
+
+.facebook-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -97px 0;
+  margin-left: 6px;
+}
+
+.youtube-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -2px 0;
+  margin-left: 6px;
 }
 
 .copyright {
   display: inline-block;
-  width: 33%
+  width: 33%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
 }
