@@ -106,17 +106,21 @@
           <a class="btn" href="search-form-page.html">Поиск гостиницы в Седоне</a>
           <div class="modal-content search-form">
             <form action="#" method="post">
-              <fieldset>
-                <label for="checkin">Дата заезда:</label>
-                <input type="date" name ="checkin" id="checkin">
-                <button class="calendar-btn" type="button" title="Календарь">Календарь</button>
+              <fieldset class="time">
+                <label for="checkin" class="checkin-time">Дата заезда:</label>
+                <div class="date">
+                  <input type="text" name ="checkin" id="checkin" value="24 апреля 2016">
+                  <button class="calendar-btn" type="button" title="Календарь">Календарь</button>
+                </div>
               </fieldset>
-              <fieldset>
-                <label for="checkout">Дата выезда:</label>
-                <input type="date" name="checkout" id="checkout">
-                <button class="calendar-btn" type="button" title="Календарь">Календарь</button>
+              <fieldset class="time">
+                <label for="checkout" class="checkout-time">Дата выезда:</label>
+                <div class="date">
+                  <input type="text" name="checkout" id="checkout" value="4 июля 2016">
+                  <button class="calendar-btn" type="button" title="Календарь">Календарь</button>
+                </div>
               </fieldset>
-              <fieldset class = "amount">
+              <fieldset class="amount">
                   <label for="adults">Взрослые:</label>
                   <div class="adult-number">
                     <button class="minus-btn counter-btn">-1</button>
