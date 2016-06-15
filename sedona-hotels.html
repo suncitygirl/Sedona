@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang = "ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Поиск гостиниц</title>
-  </head>
-<body>
-    <header class = "main-header">
-      <div class = "container">
-        <nav class = "main-navigation">
-          <ul>
-            <li>
-              <a href = "#" class = "info">Информация</a>
-            </li>
-            <li>
-              <a href = "#" class = "gallery">Фото и видео</a>
-            </li>
-            <li>
-              <a href = "#" class = "map">Карта штата</a>
-            </li>
-            <li>
-              <a href = "sedona-hotels.html" class = "hotels active">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-        <a class = "logo" href = "sedona.html">logo</a>
-      </div>
-    </header>
-    <main class = "container">
-      <section class = "user-menu">
-        <form action = "#" method = "post">
-          <fieldset class = "infrasturcure">
-            <legend class = "first title">Инфракструктура</legend>
-            <input type = "checkbox" name = "waterpool" value = "val-1" id = "wp" checked>
-            <label for = "wp">Бассейн</label><br>
-            <input type = "checkbox" name = "parking" value = "val-2" id = "pk">
-            <label for = "pk">Парковка</label><br>
-            <input type = "checkbox" name = "wi-fi" value = "val-3" id = "wf">
-            <label for = "wf">Wi-Fi</label>
-          </fieldset>
-          <fieldset class = "housing">
-            <legend class = "second title">Тип жилья</legend>
-            <input type = "checkbox" name = "inn" value = "val-1" id = "inn" checked>
-            <label for = "inn">Гостиница</label><br>
-            <input type = "checkbox" name = "motel" value = "val-2" id = "mt" checked>
-            <label for = "mt">Мотель</label><br>
-            <input type = "checkbox" name = "apartments" value = "val-3" id = "apt" checked>
-            <label for = "apt">Апартмаменты</label>
-          </fieldset>
-          <fieldset class = "price">
-              <legend class = "third title">Стоимость в сутки</legend>
-              <label>
-                От <input type = "number" name = "from" value = "0">
-              </label>
-              <label>
-                До<input type = "number" name = "to" value = "30000">
-              </label>
-            <button type = "submit">Показать</button>
-          </fieldset>
-        </form>
-      </section>
-      <div class = "catalog">
-        <header class = "catalog-header">
-          <h2 class = "found">Найдено: 3</h2>
+<head>
+  <meta charset="utf-8">
+  <title>Поиск гостиниц</title>
+</head>
+<body class = "inner-page">
+  <header class = "main-header">
+    <div class = "container">
+      <nav class = "main-navigation">
+        <ul>
+          <li>
+            <a href = "#" class = "info">Информация</a>
+          </li>
+          <li>
+            <a href = "#" class = "gallery">Фото и видео</a>
+          </li>
+          <li>
+          </li>
+          <li>
+            <a href = "#" class = "map">Карта штата</a>
+          </li>
+          <li>
+            <a href = "sedona-hotels.html" class = "hotels active">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <a class = "logo" href = "sedona.html">logo</a>
+    </div>
+  </header>
+  <main class = "container">
+    <section class = "user-menu">
+      <form action = "#" method = "post">
+        <fieldset class = "infrasturcure">
+          <legend class = "first title">Инфракструктура</legend>
+          <input type = "checkbox" name = "waterpool" value = "val-1" id = "wp" checked>
+          <label for = "wp">Бассейн</label><br>
+          <input type = "checkbox" name = "parking" value = "val-2" id = "pk">
+          <label for = "pk">Парковка</label><br>
+          <input type = "checkbox" name = "wi-fi" value = "val-3" id = "wf">
+          <label for = "wf">Wi-Fi</label>
+        </fieldset>
+        <fieldset class = "housing">
+          <legend class = "second title">Тип жилья</legend>
+          <input type = "checkbox" name = "inn" value = "val-1" id = "inn" checked>
+          <label for = "inn">Гостиница</label><br>
+          <input type = "checkbox" name = "motel" value = "val-2" id = "mt" checked>
+          <label for = "mt">Мотель</label><br>
+          <input type = "checkbox" name = "apartments" value = "val-3" id = "apt" checked>
+          <label for = "apt">Апартмаменты</label>
+        </fieldset>
+        <fieldset class = "price">
+          <legend class = "third title">Стоимость в сутки</legend>
+          <label>
+            От <input type = "number" name = "from" value = "0">
+          </label>
+          <label>
+            До<input type = "number" name = "to" value = "30000">
+          </label>
+          <button type = "submit">Показать</button>
+        </fieldset>
+      </form>
+    </section>
+    <div class = "catalog">
+      <header class = "catalog-header">
+        <h2 class = "found">Найдено: 3</h2>
         <div class = "sort-type-list">
           <ul>
             <li>
               <a class = "sort-by-price" href = "#">По цене</a>
               <a class = "sort-by-type>" href = "#">По типу</a>
               <a class = "sort-by-rating" href = "#">По рейтингу</a>
-          </ul>
-          <div class = "arrows">
-            <a class = "arrow-up" href = "#"></a>
-            <a class = "arrow-down" href = "#"></a>
+            </ul>
+            <div class = "arrows">
+              <a class = "arrow-up" href = "#"></a>
+              <a class = "arrow-down" href = "#"></a>
+            </div>
           </div>
-        </div>
         </header>
         <main class = "content">
           <section class = "catalog-element">
@@ -152,22 +154,22 @@
       <div class = "container">
         <section class = "hashtag">
           <p>#visitsedona<p>
-        </section>
-        <section class = "social">
-          <a href = "#" class = "twitter-button"></a>
-          <a href = "#" class = "facebook-button"></a>
-          <a href = "#" class = "youtube-button"></a>
-        </section>
-        <section class = "copyright">
-          <p>
-            Website by
-            <a href = "#" class = "author"></a>
-            for
-            <a href = "http://htmlacademy.ru/" class = "htmlacademy"></a>
-          </p>
-        </section>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+          </section>
+          <section class = "social">
+            <a href = "#" class = "twitter-button"></a>
+            <a href = "#" class = "facebook-button"></a>
+            <a href = "#" class = "youtube-button"></a>
+          </section>
+          <section class = "copyright">
+            <p>
+              Website by
+              <a href = "#" class = "author"></a>
+              for
+              <a href = "http://htmlacademy.ru/" class = "htmlacademy"></a>
+            </p>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>
