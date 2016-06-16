@@ -192,13 +192,6 @@ body .inner-page {
   max-width: 252px;
 }
 
-/*.feature-img {
-  display: inline-block;
-  vertical-align: top;
-  width: 66%;
-  height: 256px;
-}*/
-
 .feature-img img{
   width: 100%;
 }
@@ -333,7 +326,7 @@ body .inner-page {
   width: 100%;
 }
 
-.btn {
+.search-form .btn {
   display: inline-block;
   padding: 33px 164px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
