@@ -8,11 +8,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  background: #ffffff url("../img/background-photo.png") no-repeat 50% 56px;
-  background-size: 100% 515px;
+  background: #f2f2f2;/* url("../img/background-photo.png") no-repeat 50% 56px;*/
+  /*background-size: 100% 515px;*/
 }
 
 body .inner-page {
+}
+
+.container {
+  background-color: #ffffff;
 }
 
 .clearfix::after {
@@ -23,12 +27,12 @@ body .inner-page {
 
 .main-header {
   margin-bottom: 76px;
-  color: #000000
-  background: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .main-navigation {
-  min-height: 56px;
+  min-height: 66px;
   margin: 0 6%;
 }
 
@@ -72,16 +76,26 @@ body .inner-page {
   position: absolute;
   top: -15px;
   z-index: 1;
-  left: 50%;
   margin-left: -64px;
 }
 
+.main-image-block {
+  position: relative;;
+  top: -76px;
+  min-height: 512px;
+  width: 100%;
+  background: #f2f2f2 url("../img/background-photo.png") no-repeat 50%;
+  background-size: 100% 515px;
+}
+
 .intro-image {
+  position: absolute;
+  display: block;
+  top: 76px;
+  left: 50%;
   height: 352px;
   width: 458px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -229px;
   margin-bottom: 135px;
 }
 
@@ -138,6 +152,12 @@ body .inner-page {
   box-sizing: border-box;
 }
 
+.feature-img {
+  display: inline-block;
+  width: 67%;
+  height: 256px;
+  overflow-y: hidden;
+}
 .feature-name {
   display: block;
   font-size: 21px;
@@ -172,11 +192,15 @@ body .inner-page {
   max-width: 252px;
 }
 
-.feature-img {
+/*.feature-img {
   display: inline-block;
   vertical-align: top;
   width: 66%;
   height: 256px;
+}*/
+
+.feature-img img{
+  width: 100%;
 }
 
 .promo-recomendations {
@@ -198,6 +222,10 @@ body .inner-page {
   line-height: 26px;
   padding-top: 60px;
   box-sizing: border-box;
+}
+
+.promo-item:nth-child(2) {
+  width: 34%;
 }
 
 .housing-promo-logo {
@@ -262,7 +290,9 @@ body .inner-page {
   box-sizing: border-box;
 }
 
-
+.feature:nth-child(2) {
+  width: 34%;
+}
 .index-content-bottom {
   margin: 0 auto;
   width: 568px;
@@ -356,6 +386,14 @@ display: none;
   padding-top: 17px;
 }
 
+.search-form .search-btn:hover {
+  background-color: #669ec0;
+}
+
+.search-form .search-btn:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
 
 .search-form input{
   border: none;
@@ -369,7 +407,6 @@ display: none;
   position: relative;
   display:inline-block;
 }
-
 
 .time .checkin-time{
   display: inline-block;
@@ -388,19 +425,28 @@ display: none;
   font-size: 0;
 }
 
+.amount label {
+  vertical-align: middle;
+}
+
 .amount label:first-child {
-  margin-right: 28px;
+  margin-right: 7px;
 }
 
 .adult-number {
-  margin-right: 52px;
+  margin-right: 49px;
 }
 
-.amount label:last-child {
-  margin-left: 27px;
+.amount .children-label {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .search-form label {
+  display: inline-block;
+  vertical-align: middle;
+  height: 38px;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -410,7 +456,7 @@ display: none;
 .time input[type="text"] {
   width: 346px;
   height: 38px;
-  padding-left: 15px;
+  padding-left: 12px;
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -427,13 +473,12 @@ display: none;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .search-form .counter-btn {
   position: absolute;
   width: 38px;
-  height: 38px;
+  height: 40px;
   font-size: 0;
   border: none;
   outline: none;
@@ -496,6 +541,16 @@ display: none;
   transform: rotate(90deg);
 }
 
+.minus-btn::after:hover {
+  background-color: #000000;
+}
+
+.plus-btn::before:active,
+.plus-btn::after:active,
+.minus-btn::after:active {
+  background-color: #81b3d2;
+}
+
 .iframe {
   height: 473px;
   width: 100%;
@@ -506,22 +561,30 @@ display: none;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
-  height: 120px;
+  min-height: 120px;
   width: 100%;
 }
 
 .hashtag {
   display: inline-block;
-  width: 33%;
   text-align: center;
+  width: 33%;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 51px;
+}
+
+.hashtag p {
+  margin: 0;
 }
 
 .social {
   display: inline-block;
+  height: 84px;
+  padding-top: 36px;
   text-align: center;
+  vertical-align: middle;
   width: 33%;
   font-size: 0;
 }
@@ -555,10 +618,16 @@ display: none;
 
 .copyright {
   display: inline-block;
+  height: 74px;
+  padding-top: 54px;
   text-align: center;
   width: 33%;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.copyright p {
+  margin: 0;
 }
